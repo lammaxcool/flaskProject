@@ -1,0 +1,10 @@
+# env
+.venv
+venv
+
+# IDE
+.idea/
+
+# folders
+migrations/
+__pycache__
