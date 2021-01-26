@@ -23,9 +23,9 @@ class City(db.Model):
 #                          )
 
 class RouteStation(db.Model):
-    route_id = db.Column(db.Integer, db.ForeignKey('route.id')),
-    station_id = db.Column(db.Integer, db.ForeignKey('station.id')),
-    order_station = db.Column( db.Integer, nullable=False)
+    route_id = db.Column(db.Integer, db.ForeignKey('route.id'))
+    station_id = db.Column(db.Integer, db.ForeignKey('station.id'))
+    order_station = db.Column(db.Integer, nullable=False)
 
     route = db.relationship('route')
     station = db.relationship('station')
